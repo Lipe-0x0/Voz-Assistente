@@ -28,10 +28,10 @@ class Psy:
                     # EVITAR ACÚMULO DE ARQUIVOS MP3 NA PASTA
                     self.lista_audios.append(filename)
                     if len(self.lista_audios)>=2:
-                        os.remove("sons/"+str(self.lista_audios[0])+".mp3")
+                        os.remove("Voz-Assistente/sons/"+str(self.lista_audios[0])+".mp3") 
                         del self.lista_audios[0]
                     
-                    frase.save("sons/"+str(filename)+".mp3")
-                    playsound("sons/"+str(filename)+".mp3")
+                    frase.save("Voz-Assistente/sons/"+str(filename)+".mp3")
+                    playsound("Voz-Assistente/sons/"+str(filename)+".mp3")
 
 Psy().play()
