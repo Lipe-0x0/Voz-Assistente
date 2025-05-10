@@ -14,7 +14,10 @@ class Interface:
         self.raiz.mainloop()
 
 t = Interface(titulo="teste",col_image="blue",tamanho_pag="500x650")
-janela1 = Janela(t.raiz, comp=0.07, alt=0.61, pos_x=0.5, pos_y=0.2, 
-                 cor_back="red", contorno_borda= 4, cor_borda="white", larg_borda=10)
+janela1 = Janela(t.raiz, comp=0.90, alt=0.70, pos_x=0.05, pos_y=0.14, 
+                 cor_back="red", cor_borda="black", larg_borda=10)
+
+janela2 = Janela(t.raiz, comp=1, alt=0.10, pos_x=0, pos_y=0, 
+                 cor_back="green", cor_borda="black", larg_borda=5)
 
 t.iniciar()
