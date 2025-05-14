@@ -12,11 +12,11 @@ class Interface:
         self.raiz.iconbitmap("icones/mensagem-de-voz.ico") # Ícone
 
     def botao(self):
-        self.opcao = Botao(self.janela2.janela, text="OPÇÃO", comp=0.2,alt=0.50, pos_x=0.10, pos_y= 0.3) # Botão de Opção
+        self.opcao = Botao(self.janela2.janela, text="OPÇÃO", comp=0.2,alt=0.50, pos_x=0.3, pos_y= 0.3) # Botão de Opção
         self.opcao.mudar_atrib(tam_borda=6, cor_fundo="#231d1e", cor_letra="white") # Mudando configs do botao
         self.opcao.por_imagem("icones/opcao.png", posicao=LEFT)
 
-        self.info = Botao(self.janela2.janela, text="INFO", comp=0.2,alt=0.50, pos_x=0.35, pos_y= 0.3) # Botão de informação
+        self.info = Botao(self.janela2.janela, text="INFO", comp=0.2,alt=0.50, pos_x=0.5, pos_y= 0.3) # Botão de informação
         self.info.mudar_atrib(tam_borda=6, cor_fundo="#231d1e", cor_letra="white") # Mudando configs do botao
         self.info.por_imagem("icones/simbolo-de-informacao.png", posicao=LEFT)
 
