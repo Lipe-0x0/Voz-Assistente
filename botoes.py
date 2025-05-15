@@ -2,11 +2,10 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 class Botao:
-    def __init__(self, parent, text, comp, alt, pos_x, pos_y, fonte = "Courier New", tam_fonte = 14, cor_letra = "black", 
+    def __init__(self, parent, text, comp, alt, pos_x, pos_y, cor_letra = "black", 
                  cor_fundo = "white", tam_borda = 0, funcao = None):
         
-        self.botao = Button(parent, text=text, command=funcao,
-                            font=(fonte, tam_fonte), fg = cor_letra, bg = cor_fundo, bd = tam_borda) # Criando botao
+        self.botao = Button(parent, text=text, command=funcao, fg = cor_letra, bg = cor_fundo, bd = tam_borda) # Criando botao
 
         self.botao.place(relx= pos_x, rely= pos_y, relheight=alt, relwidth=comp) # Botando botao no frame
 
@@ -19,7 +18,7 @@ class Botao:
 
         self.botao.configure(image=self.imagem, compound=posicao)
 
-    def mudar_atrib(self, fonte = "Courier New", tam_fonte = 14, cor_letra = "black", 
+    def mudar_atrib(self, fonte,cor_letra = "black", 
                  cor_fundo = "white", tam_borda = 0):
 
-        self.botao.configure(font=(fonte, tam_fonte), fg = cor_letra, bg=cor_fundo, bd=tam_borda)
+        self.botao.configure(font=fonte, fg = cor_letra, bg=cor_fundo, bd=tam_borda)
